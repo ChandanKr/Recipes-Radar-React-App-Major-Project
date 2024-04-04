@@ -1,0 +1,96 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  transition: ease-in 0.2s;
+} */
+
+.footer {
+  border-top: 1px solid rgba(211, 211, 211, 0.432);
+  background-color: black;
+  width: -webkit-fill-available;
+  height: 250px;
+  padding: 0 5rem;
+}
+
+.footer-contents {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.company-logo {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.company-logo img {
+  width: 350px !important;
+}
+
+.services {
+  width: 200px;
+}
+
+.follow-us {
+  width: 200px;
+}
+
+.services p,
+.follow-us p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: white;
+}
+.services p span,
+.follow-us p span {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #00d1cd;
+}
+
+.services ul,
+.follow-us ul {
+  list-style: none;
+}
+
+.services ul li,
+.follow-us ul li {
+  margin-top: 7px;
+  display: block;
+  width: fit-content;
+  color: white;
+}
+
+.services ul li span:hover,
+.services ul li a span:hover,
+.follow-us ul li span:hover {
+  color: #00d1cd;
+  text-shadow: 1px 1px 5px #00d1cd;
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+.follow-us ul li span {
+  margin-left: 15px;
+  padding-bottom: 5px;
+  color: white;
+}
+
+.services ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.copyright p {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 1.8rem;
+  font-family: monospace;
+  color: white;
+}
+
+.copyright p a {
+  color: #00d1cd;
+}
