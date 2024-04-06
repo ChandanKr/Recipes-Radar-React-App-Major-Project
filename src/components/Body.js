@@ -1,17 +1,20 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./styles/body.css";
+import useRecipesData from "../utils/useRecipesData";
 
 const Body = () => {
-  useEffect(() => {
-    getRecipesData();
-  }, []);
+  const [inputValue, setInputValue] = useState("");
 
-  const getRecipesData = async () => {
-    const data = await fetch("https://dummyjson.com/recipes?limit=50");
-    const json = await data.json();
-    console.log(json);
-  };
+  // useEffect(() => {
+  //   useRecipesData();
+  // }, []);
+
+  // const getRecipesData = async () => {
+  //   const data = await fetch("https://dummyjson.com/recipes?limit=50");
+  //   const json = await data.json();
+  //   console.log(json);
+  // };
 
   return (
     <div className="body">
@@ -31,6 +34,8 @@ const Body = () => {
               id=""
               placeholder="Recipe in your mind ? Search here . . . . ."
               className=""
+              value={inputValue}
+              onChange={(e) => setInputValue(e.target.value)}
             />
             <button className="search-btn">
               <Link to="/filters">Search</Link>

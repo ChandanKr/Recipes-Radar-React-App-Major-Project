@@ -1,17 +1,9 @@
-/* * {
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif;
-} */
-
 .body {
   width: 100%;
   min-height: 87vh;
   background-image: url("../../assets/images/home-background.jpg");
   background-size: cover;
   background-position: center;
-  /* position: relative; */
-  /* top: 5rem; */
 }
 
 .overlay {
@@ -39,7 +31,6 @@
   color: white;
   font-size: 5rem;
   font-weight: 500;
-  /* text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(0, 0, 0, 0.3); */
   text-shadow: -1px -1px 3px #020202, 2px 2px 4px #1b1b1b;
 }
 
@@ -93,7 +84,7 @@
   box-shadow: 0px 0px 10px 2px #00d1cd;
 }
 
-.search-btn a{
+.search-btn a {
   text-decoration: none;
   color: #fff;
 }
