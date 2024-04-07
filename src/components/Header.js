@@ -16,15 +16,18 @@ const Header = () => {
         </div>
         <div>
           <ul className="navItems">
-            <li className="">
-              <Link to="/">Home</Link>
-            </li>
-            <li className="">
-              <Link to="/filters">Filters</Link>
-            </li>
-            <li className="">
-              <Link to="/about-us">About Us</Link>
-            </li>
+            <Link to="/">
+              <li className="">Home</li>
+            </Link>
+
+            <Link to="/filters">
+              <li className="">Filters</li>
+            </Link>
+
+            <Link to="/about-us">
+              <li className="">About Us</li>
+            </Link>
+
             <li onClick={() => setShowModal(true)}>Contact Us</li>
           </ul>
         </div>

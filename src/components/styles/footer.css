@@ -56,8 +56,12 @@
   color: white;
 }
 
+.services ul li span,
+.follow-us ul li span {
+  transition: all 0.2s ease-in-out;
+}
+
 .services ul li span:hover,
-.services ul li a span:hover,
 .follow-us ul li span:hover {
   color: #00d1cd;
   text-shadow: 1px 1px 5px #00d1cd;
@@ -71,7 +75,7 @@
   color: white;
 }
 
-.services ul li a {
+.services ul a {
   text-decoration: none;
   color: white;
 }

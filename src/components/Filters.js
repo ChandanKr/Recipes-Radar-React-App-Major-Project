@@ -84,7 +84,7 @@ const Filters = () => {
               <>
                 <div className="filter-chips">
                   <div className="filter-name">{filterValue}</div>{" "}
-                  <div className="clear-btn" onClick={handleChipClose}>
+                  <div className="clear-btn" title="click to clear filter" onClick={handleChipClose}>
                     <IoCloseCircle />
                   </div>
                 </div>

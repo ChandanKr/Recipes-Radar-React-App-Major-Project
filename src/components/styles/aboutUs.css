@@ -1,6 +1,36 @@
-/* * {
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif;
-  transition: ease-in 0.2s;
-} */
+.about-us-container {
+  min-height: 100vh;
+  padding: 0 5rem;
+  background-image: repeating-linear-gradient(
+      15deg,
+      hsl(142, 0%, 8%) 0px,
+      hsl(142, 0%, 8%) 12px,
+      transparent 13px
+    ),
+    repeating-linear-gradient(
+      155deg,
+      hsl(142, 0%, 8%) 0px,
+      hsl(142, 0%, 8%) 12px,
+      transparent 13px
+    ),
+    linear-gradient(90deg, hsla(96, 0%, 71%, 1), hsla(111, 0%, 71%, 1));
+}
+
+.messages-section {
+  padding: 2rem 0;
+}
+
+.messages-section p {
+  color: #fff;
+  font-size: 1.3rem;
+  text-align: justify;
+  padding: 1rem 1.5rem;
+  background-image: linear-gradient(to right, #20b2aa, #02a171);
+  margin-bottom: 1rem;
+  border-radius: 2rem 0;
+  box-shadow: 0px 0px 10px #00d1cd;
+}
+
+.messages-section p:last-child {
+  margin-bottom: 0;
+}

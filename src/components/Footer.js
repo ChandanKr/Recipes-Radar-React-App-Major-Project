@@ -20,23 +20,26 @@ const Footer = () => {
               Our <span>Services:</span>
             </p>
             <ul>
-              <li>
-                <Link to="/">
+              <Link to="/">
+                <li>
                   ✨ <span>Home</span>
-                </Link>
-              </li>
-              <li>
-                <Link to="/filters">
+                </li>
+              </Link>
+
+              <Link to="/filters">
+                <li>
                   ✨ <span>Filters</span>
-                </Link>
-              </li>
-              <li>
-                <Link to="/about-us">
+                </li>
+              </Link>
+
+              <Link to="/about-us">
+                <li>
                   ✨ <span>About Us</span>
-                </Link>
-              </li>
+                </li>
+              </Link>
+
               <li>
-                ✨ <span onClick={()=>setShowModal(true)}>Contact Us</span>
+                ✨ <span onClick={() => setShowModal(true)}>Contact Us</span>
               </li>
             </ul>
           </div>

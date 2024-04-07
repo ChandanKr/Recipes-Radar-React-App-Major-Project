@@ -32,7 +32,7 @@ const Body = () => {
               type="text"
               name=""
               id=""
-              placeholder="Recipe in your mind ? Search here . . . . ."
+              placeholder="Confused for recipe ? Search here . . . . ."
               className=""
               value={inputValue}
               onChange={(e) => setInputValue(e.target.value)}

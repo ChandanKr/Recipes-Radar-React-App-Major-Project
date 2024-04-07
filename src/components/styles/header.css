@@ -51,7 +51,7 @@
   box-shadow: 0px 0px 10px 2px #00d1cd;
 }
 
-.navItems li a {
+.navItems a {
   text-decoration: none !important;
   color: white
 }

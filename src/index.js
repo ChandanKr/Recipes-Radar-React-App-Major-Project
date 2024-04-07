@@ -7,9 +7,14 @@ import AboutUS from "./components/AboutUS";
 import RecipesDetails from "./components/RecipesDetails";
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import ErrorPage from "./components/ErrorPage";
+import useOnline from "./utils/useOnline";
+import OfflinePage from "./components/OfflinePage";
 
 const AppLayout = () => {
-  return (
+  const online = useOnline();
+  return !online ? (
+    <OfflinePage />
+  ) : (
     <>
       <Header />
       <Outlet />
