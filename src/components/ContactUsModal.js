@@ -4,13 +4,13 @@ const ContactUsModal = ({ showModal, setShowModal }) => {
   return (
     <>
       <div
-        className={`w-full h-full bg-black bg-opacity-70 fixed z-10 top-2/4 left-2/4 transform -translate-x-1/2 -translate-y-1/2 transition ease-in-out duration-500 ${
+        className={`w-full h-full bg-white bg-opacity-10 backdrop-blur-sm fixed z-10 top-2/4 left-2/4 transform -translate-x-1/2 -translate-y-1/2 transition ease-in-out duration-500 ${
           showModal ? "block" : "hidden"
         }`}
         onClick={() => setShowModal(false)}
       ></div>
       <div
-        className={`z-20 bg-gradient-to-br from-teal-600 to-teal-400 border border-white rounded-tl-[4rem] rounded-br-[4rem] shadow-custom-white w-2/3 h-3/4 fixed left-2/4 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center transition ease-in-out duration-500  max-sm:w-5/6 max-md:w-3/4 max-sm:max-h-96 max-md:max-h-96 max-sm:overflow-scroll max-md:overflow-scroll ${
+        className={`z-20 bg-gradient-to-br from-teal-600 to-teal-400 border border-white rounded-tl-[4rem] rounded-br-[4rem] shadow-custom-white w-2/3 h-3/4 fixed left-2/4 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center transition ease-in-out duration-500  max-sm:w-5/6 max-md:w-5/6 max-sm:h-4/6 max-md:h-4/6 max-sm:overflow-scroll max-md:overflow-scroll max-sm:overflow-x-hidden max-md:overflow-x-hidden ${
           showModal ? "top-1/2" : "top-[-600px]"
         }`}
       >

@@ -18,12 +18,12 @@ const Body = () => {
 
   return (
     <div
-      className="w-full min-h-[87vh] bg-cover bg-center"
+      className="w-full min-h-[87vh] bg-cover bg-center relative"
       style={{
         backgroundImage: `url(${BG_IMG})`,
       }}
     >
-      <div className="absolute inset-0 bg-black bg-opacity-70 flex justify-center items-center">
+      <div className="absolute inset-0 bg-black bg-opacity-70 flex justify-center items-center h-full">
         <div className="flex flex-col items-center w-full px-20">
           <div className="flex items-center">
             <h1 className="text-white text-7xl font-bold ">

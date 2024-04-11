@@ -23,7 +23,7 @@ const BGIMG = {
 
 const AboutUS = () => {
   return (
-    <div className="about-us-container bg-gradient-to-r from-sky-500 to-indigo-500 min-h-screen px-20 py-0">
+    <div className="about-us-container bg-gradient-to-r from-sky-500 to-indigo-500 min-h-screen px-20 py-0 max-sm:px-8 max-md:px-8">
       <div className="px-0 py-8">
         <p className="bg-white bg-opacity-80 backdrop-blur-xl text-xl text-center px-6 py-4 mb-4 rounded-tl-[2rem] rounded-br-[2rem] shadow-custom-black">
           {aboutUsMsg1}
