@@ -1,0 +1,11 @@
+.shimmer-effect {
+  color: grey;
+  mask: linear-gradient(120deg, #000 25%, #0005, #000 75%) right/250% 100%;
+  animation: shimmer 2.5s infinite;
+  background-repeat: no-repeat;
+}
+@keyframes shimmer {
+  100% {
+    -webkit-mask-position: left;
+  }
+}

@@ -3,12 +3,18 @@ import Header from "./components/Header";
 import Body from "./components/Body";
 import Footer from "./components/Footer";
 import Filters from "./components/Filters";
-import AboutUS from "./components/AboutUS";
+// import AboutUS from "./components/AboutUS";
 import RecipesDetails from "./components/RecipesDetails";
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import ErrorPage from "./components/ErrorPage";
 import useOnline from "./utils/useOnline";
 import OfflinePage from "./components/OfflinePage";
+
+// For lazy loading
+import { lazy, Suspense } from "react";
+const AboutUS = lazy(() => import("./components/AboutUS"));
+// On Demand loading , react suspends loading upon render
+// To prevent this, we will use { Suspense } from "react"
 
 const AppLayout = () => {
   const online = useOnline();
@@ -39,11 +45,15 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/about-us",
-        element: <AboutUS />,
+        element: (
+          <Suspense>
+            <AboutUS />
+          </Suspense>
+        ), // Suspense for lazy loading
       },
       {
         path: "/recipes/:id",
-        element: <RecipesDetails />,
+        element: <RecipesDetails />, // Dynamic routing
       },
     ],
   },
