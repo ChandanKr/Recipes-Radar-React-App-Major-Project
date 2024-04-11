@@ -7,7 +7,7 @@
 ### **Project Description:**
 > Recipes Radar is a react based application, in which there are many pages, basically components, like header, footer, landingpage, filters-page, detailed recipe page, about-us, contact-us and many more. This project is basically an idea to find out the recipes of food items that a user can filter out according to their need.
 
-## **Project Features:**
+### **Project Features:**
 - 3 colored theme based UI.
 - Dynamic data with filter.
 - Shimmer UI until data is not fetched.
@@ -15,7 +15,7 @@
 - Responsive behaviour.
 - Chips on filter selection, etc.
 
-## **Concepts Used:**
+### **Concepts Used:**
 - React Virtual DOM
 - React Router Dom - createBrowserRouter, RouterProvider, Link
 - React Hooks -useState, useEffect
@@ -24,7 +24,7 @@
 - Styling- Tailwind CSS utility classes
 - Bundler - Parcel
   
-## **Tech Stack / Tools Used:**
+### **Tech Stack / Tools Used:**
 
 ###
 
@@ -55,12 +55,12 @@
 > - React, JavaScript, JSX, HTML5, CSS3, Tailwind CSS, Redux, NPM, Parcel, Git, VS Code
 
   
-## **Deployment And Hosting:**
+### **Deployment And Hosting:**
 - To deploy this project run, I have used [Netlify.com](https://www.netlify.com/).
 
 
   
-## **Optimizations And Future Scope**
+### **Optimizations And Future Scope**
 
 - Toggle Theme - Dark/Light.
 - Keyboard Accessibility.
@@ -68,11 +68,11 @@
 - Fully Responsiveness.
 - Better Contents, and many more.
 
-## **Developer:**
+### **Developer:**
 
 - [Chandan Kumar](https://www.linkedin.com/in/chandan2606/)
   
-## **Feedbacks or Suggestions:**
+### **Feedbacks or Suggestions:**
 
 > If you have any feedback or any suggestion regarding this project, please reach out to me - [Email Me](mailto:chandan2606kr@gmail.com)
 
