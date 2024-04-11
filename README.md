@@ -14,6 +14,15 @@
 - Routing from navigation menu.
 - Responsive behaviour.
 - Chips on filter selection, etc.
+
+## **Concepts Used:**
+- React Virtual DOM
+- React Router Dom - createBrowserRouter, RouterProvider, Link
+- React Hooks -useState, useEffect
+- React Custom Hooks -useRecipesData
+- React State Management - State, Props, Props Drilling
+- Styling- Tailwind CSS utility classes
+- Bundler - Parcel
   
 ## **Tech Stack / Tools Used:**
 
@@ -59,7 +68,7 @@
 - Fully Responsiveness.
 - Better Contents, and many more.
 
-## **Author:**
+## **Developer:**
 
 - [Chandan Kumar](https://www.linkedin.com/in/chandan2606/)
   
