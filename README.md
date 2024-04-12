@@ -5,7 +5,7 @@
 * [Recipes Radar - Recipes Discovered, Tastes Savored](https://recipes-radar-react-app-by-chandan.netlify.app/)
 
 ### **Project Description:**
-> Recipes Radar is a react based application, in which there are many pages, basically components, like header, footer, landingpage, filters-page, detailed recipe page, about-us, contact-us and many more. This project is basically an idea to find out the recipes of food items that a user can filter out according to their need.
+> A React based application where users can able to find food recipes with some filter options, used [Dummy JSON](https://dummyjson.com/recipes?limit=50) to get these recipes data from the API. Also used libraries like react-router-dom, react-icons, Tailwind CSS for better UI experience. 
 
 ### **Project Features:**
 - 3 colored theme based UI.
