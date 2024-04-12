@@ -8,7 +8,7 @@
 > A React based application where users can able to find food recipes with some filter options, used [Dummy JSON](https://dummyjson.com/recipes?limit=50) to get these recipes data from the API. Also used libraries like react-router-dom, react-icons, Tailwind CSS for better UI experience. 
 
 ### **Project Features:**
-- 3 colored theme based UI.
+- Multiple Components with 3 colored theme based UI.
 - Dynamic data with filter.
 - Shimmer UI until data is not fetched.
 - Routing from navigation menu.
