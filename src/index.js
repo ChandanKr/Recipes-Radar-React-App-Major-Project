@@ -9,23 +9,33 @@ import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import ErrorPage from "./components/ErrorPage";
 import useOnline from "./utils/useOnline";
 import OfflinePage from "./components/OfflinePage";
+import SearchContext from "./utils/SearchContext";
 
 // For lazy loading
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useState } from "react";
 const AboutUS = lazy(() => import("./components/AboutUS"));
 // On Demand loading , react suspends loading upon render
 // To prevent this, we will use { Suspense } from "react"
 
 const AppLayout = () => {
+  const [searchVal, setSearchVal] = useState({
+    searchKeyword: "",
+  });
+
   const online = useOnline();
   return !online ? (
     <OfflinePage />
   ) : (
-    <>
+    <SearchContext.Provider
+      value={{
+        searchVal: searchVal,
+        setSearchVal: setSearchVal,
+      }}
+    >
       <Header />
       <Outlet />
       <Footer />
-    </>
+    </SearchContext.Provider>
   );
 };
 

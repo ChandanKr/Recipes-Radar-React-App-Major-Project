@@ -1,9 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import useRecipesData from "../utils/useRecipesData";
 import ShimmerCard from "./ShimmerCard";
 import { filtersData } from "../constant/shared";
 import { IoCloseCircle } from "react-icons/io5";
 import RecipesCard from "./RecipesCard";
+import SearchContext from "../utils/SearchContext";
 
 const Filters = () => {
   let [filterValue, setFilterValue] = useState("");
@@ -20,6 +21,9 @@ const Filters = () => {
     setAllRecipes(recipeData.recipes);
     setFilteredRecipes(recipeData.recipes);
   };
+
+  const { searchVal, setSearchVal } = useContext(SearchContext);
+  console.log(searchVal);
 
   const handleSelectedFilters = (e) => {
     setFilterValue(e.target.innerText);
@@ -84,6 +88,9 @@ const Filters = () => {
         }
       >
         <div className="px-8 w-full">
+          {/* <span className="m-2 p-2 border-8 border-red-500 font-bold text-3xl text-white">
+            {searchVal.searchKeyword}
+          </span> */}
           <div className="flex flex-row items-center justify-between mb-6 max-sm:flex-col max-md:flex-col">
             <div className="w-2/5 flex flex-row justify-between max-sm:flex-col max-md:flex-col max-sm:w-full max-md:w-full max-sm:items-center max-md:items-center">
               {filteredRecipes == null ? (
