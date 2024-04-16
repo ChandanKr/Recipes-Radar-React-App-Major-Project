@@ -6,6 +6,6 @@ const SearchContext = createContext({
   },
 });
 
-// SearchValueContext.displayName = "SearchValueContext"; // for debugging purpose only, it will show like SearchValueContext.Provider
+SearchContext.displayName = "SearchValueContext"; // for debugging purpose only, it will show like SearchValueContext.Provider
 
 export default SearchContext;

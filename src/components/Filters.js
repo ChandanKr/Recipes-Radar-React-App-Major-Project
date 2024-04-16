@@ -134,10 +134,10 @@ const Filters = () => {
             </div>
           </div>
 
-          <div className="result-cards grid grid-cols-4 gap-8 max-sm:grid-cols-1 max-md:grid-cols-1">
+          <div className="result-cards grid grid-cols-4 gap-8 max-sm:grid-cols-1 max-md:grid-cols-1 lg:grid-cols-5">
             {filteredRecipes == null ? (
               <>
-                {Array.from({ length: 8 }, (_, index) => (
+                {Array.from({ length: 10 }, (_, index) => (
                   <ShimmerCard key={index} />
                 ))}
               </>
