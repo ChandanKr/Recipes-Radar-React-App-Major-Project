@@ -32,7 +32,7 @@ const Filters = () => {
       setFilteredRecipes(recipeData.recipes);
     } else {
       const filteredRecipesWithSearchQuery = recipeData.recipes.filter(
-        (recipe) => recipe.name.toLowerCase().includes(searchQuery)
+        (recipe) => recipe.name.toLowerCase().includes(searchQuery.toLowerCase())
       );
       setAllRecipes(recipeData.recipes);
       setFilteredRecipes(filteredRecipesWithSearchQuery);
