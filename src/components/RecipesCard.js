@@ -38,11 +38,11 @@ const RecipesCard = ({ recipe }) => {
                 {name}
               </p>
             </div>
-            <div className="mt-4 px-4 py-2 bg-transparent text-white drop-shadow-textSmall text-[0.8rem] font-bold border border-white rounded-tl-xl rounded-br-xl cursor-pointer transition-all hover:bg-black hover:text-cyan-400 hover:border-black hover:shadow-custom-cyan max-sm:bg-black max-md:bg-black max-sm:text-cyan-400 max-md:text-cyan-400">
-              <Link to={`/recipes/${id}`} className="link">
+            <Link to={`/recipes/${id}`}>
+              <div className="mt-4 px-4 py-2 bg-transparent text-white drop-shadow-textSmall text-[0.8rem] font-bold border border-white rounded-tl-xl rounded-br-xl cursor-pointer transition-all hover:bg-black hover:text-cyan-400 hover:border-black hover:shadow-custom-cyan max-sm:bg-black max-md:bg-black max-sm:text-cyan-400 max-md:text-cyan-400">
                 Show Full Recipe
-              </Link>
-            </div>
+              </div>
+            </Link>
           </div>
         </div>
       </div>

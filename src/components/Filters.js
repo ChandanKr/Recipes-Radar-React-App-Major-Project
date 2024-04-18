@@ -5,6 +5,7 @@ import { filtersData } from "../constant/shared";
 import { IoCloseCircle } from "react-icons/io5";
 import RecipesCard from "./RecipesCard";
 import SearchContext from "../utils/SearchContext";
+import { useSelector } from "react-redux";
 
 const Filters = () => {
   let [filterValue, setFilterValue] = useState("");
@@ -12,18 +13,31 @@ const Filters = () => {
   let [filteredRecipes, setFilteredRecipes] = useState(allRecipes);
   let [filterApplied, setFilterApplied] = useState(false);
 
+  //! useCOntext Hook Concept
+  // const { searchVal, setSearchVal } = useContext(SearchContext);
+  // console.log(searchVal);
+
+  //! Redux Toolkit Concepts
+  const searchQuery = useSelector((store) => store.search.query);
+
   useEffect(() => {
     fetchData();
   }, []);
 
   const fetchData = async () => {
     const recipeData = await useRecipesData();
-    setAllRecipes(recipeData.recipes);
-    setFilteredRecipes(recipeData.recipes);
+    // console.log(recipeData.recipes);
+    if (searchQuery == "") {
+      setAllRecipes(recipeData.recipes);
+      setFilteredRecipes(recipeData.recipes);
+    } else {
+      const filteredRecipesWithSearchQuery = recipeData.recipes.filter(
+        (recipe) => recipe.name.toLowerCase().includes(searchQuery)
+      );
+      setAllRecipes(recipeData.recipes);
+      setFilteredRecipes(filteredRecipesWithSearchQuery);
+    }
   };
-
-  const { searchVal, setSearchVal } = useContext(SearchContext);
-  console.log(searchVal);
 
   const handleSelectedFilters = (e) => {
     setFilterValue(e.target.innerText);

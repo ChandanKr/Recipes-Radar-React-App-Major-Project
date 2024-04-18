@@ -80,7 +80,6 @@
 // Reading data from store, subscribing to our store using useSelector hook
 //todo: let suppose we have a "cart" in our header
 
-// import { list } from "postcss";
 // import { useSelector } from "react-redux";
 
 // const cartItems = useSelector((store) => store.cart.items);

@@ -4,10 +4,18 @@ import { useState } from "react";
 import ContactUsModal from "./ContactUsModal";
 import { FaAlignJustify } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
+import { useDispatch } from "react-redux";
+import { setSearchQuery } from "../utils/searchSlice";
 
 const Header = () => {
   const [isMenuBtnClicked, setIsMenuBtnClicked] = useState(false);
   const [showModal, setShowModal] = useState(false);
+
+  const dispatch = useDispatch();
+
+  const handleFiltersBtnClick = () => {
+    dispatch(setSearchQuery(""));
+  };
 
   const handleMenuButton = () => {
     setIsMenuBtnClicked(false);
@@ -41,7 +49,10 @@ const Header = () => {
             </Link>
 
             <Link to="/filters">
-              <li className="text-white ml-8 text-[1.125rem] font-bold border-2 border-black px-3 py-1 rounded-tl-xl rounded-br-xl transition ease-in duration-200 hover:text-cyan-400 hover:border-cyan-400 hover:shadow-custom-cyan">
+              <li
+                className="text-white ml-8 text-[1.125rem] font-bold border-2 border-black px-3 py-1 rounded-tl-xl rounded-br-xl transition ease-in duration-200 hover:text-cyan-400 hover:border-cyan-400 hover:shadow-custom-cyan"
+                onClick={handleFiltersBtnClick}
+              >
                 Filters
               </li>
             </Link>
